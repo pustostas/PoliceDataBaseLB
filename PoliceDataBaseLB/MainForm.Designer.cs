@@ -68,7 +68,9 @@
             this.actsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.criminalsInActsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.relationshipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.policeplatformDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -220,14 +222,14 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem});
-            this.bindingNavigator1.Location = new System.Drawing.Point(753, 0);
+            this.bindingNavigator1.Location = new System.Drawing.Point(761, 0);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(263, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(255, 25);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -243,8 +245,8 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorDeleteItem
@@ -339,6 +341,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.databaseToolStripMenuItem,
+            this.ciToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -359,21 +362,21 @@
             // criminalsToolStripMenuItem
             // 
             this.criminalsToolStripMenuItem.Name = "criminalsToolStripMenuItem";
-            this.criminalsToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.criminalsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.criminalsToolStripMenuItem.Text = "Criminals";
             this.criminalsToolStripMenuItem.Click += new System.EventHandler(this.criminalsToolStripMenuItem_Click);
             // 
             // actsToolStripMenuItem
             // 
             this.actsToolStripMenuItem.Name = "actsToolStripMenuItem";
-            this.actsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.actsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.actsToolStripMenuItem.Text = "Acts";
             this.actsToolStripMenuItem.Click += new System.EventHandler(this.actsToolStripMenuItem_Click);
             // 
             // criminalsInActsToolStripMenuItem
             // 
             this.criminalsInActsToolStripMenuItem.Name = "criminalsInActsToolStripMenuItem";
-            this.criminalsInActsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.criminalsInActsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.criminalsInActsToolStripMenuItem.Text = "Criminals to acts";
             this.criminalsInActsToolStripMenuItem.Click += new System.EventHandler(this.criminalsInActsToolStripMenuItem_Click);
             // 
@@ -384,6 +387,14 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // ciToolStripMenuItem
+            // 
+            this.ciToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.relationshipsToolStripMenuItem});
+            this.ciToolStripMenuItem.Name = "ciToolStripMenuItem";
+            this.ciToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.ciToolStripMenuItem.Text = "View";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -393,6 +404,13 @@
             this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.TabIndex = 7;
             this.label1.Text = "Criminals";
+            // 
+            // relationshipsToolStripMenuItem
+            // 
+            this.relationshipsToolStripMenuItem.Name = "relationshipsToolStripMenuItem";
+            this.relationshipsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.relationshipsToolStripMenuItem.Text = "Relationships";
+            this.relationshipsToolStripMenuItem.Click += new System.EventHandler(this.relationshipsToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -465,6 +483,8 @@
         private System.Windows.Forms.ToolStripMenuItem actsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem criminalsInActsToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem ciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relationshipsToolStripMenuItem;
     }
 }
 

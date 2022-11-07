@@ -58,7 +58,16 @@ namespace PoliceDataBaseLB
         {
             bindingNavigator1.BindingSource = criminalinactBindingSource;
             dataGridView1.DataSource = criminalinactBindingSource;
-            label1.Text = "Crimnals to acts";
+            label1.Text = "Criminals to acts";
+        }
+
+        private void relationshipsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var rs = new RSForm();
+            rs.ShowDialog();
+            actTableAdapter.Fill(policeplatformDataSet.act);
+            criminal_in_actTableAdapter.Fill(policeplatformDataSet.criminal_in_act);
+            criminalTableAdapter.Fill(policeplatformDataSet.criminal);
         }
     }
 }
