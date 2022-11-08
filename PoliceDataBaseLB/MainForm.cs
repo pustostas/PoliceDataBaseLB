@@ -69,5 +69,11 @@ namespace PoliceDataBaseLB
             criminal_in_actTableAdapter.Fill(policeplatformDataSet.criminal_in_act);
             criminalTableAdapter.Fill(policeplatformDataSet.criminal);
         }
+
+        private void queryEditToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var qe = new QueryEdit();
+            qe.Show();
+        }
     }
 }

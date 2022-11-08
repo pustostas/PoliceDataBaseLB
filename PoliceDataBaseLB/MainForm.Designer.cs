@@ -67,10 +67,11 @@
             this.criminalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.criminalsInActsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.relationshipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.queryEditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.policeplatformDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -380,20 +381,28 @@
             this.criminalsInActsToolStripMenuItem.Text = "Criminals to acts";
             this.criminalsInActsToolStripMenuItem.Click += new System.EventHandler(this.criminalsInActsToolStripMenuItem_Click);
             // 
+            // ciToolStripMenuItem
+            // 
+            this.ciToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.relationshipsToolStripMenuItem,
+            this.queryEditToolStripMenuItem});
+            this.ciToolStripMenuItem.Name = "ciToolStripMenuItem";
+            this.ciToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.ciToolStripMenuItem.Text = "View";
+            // 
+            // relationshipsToolStripMenuItem
+            // 
+            this.relationshipsToolStripMenuItem.Name = "relationshipsToolStripMenuItem";
+            this.relationshipsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.relationshipsToolStripMenuItem.Text = "Relationships";
+            this.relationshipsToolStripMenuItem.Click += new System.EventHandler(this.relationshipsToolStripMenuItem_Click);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // ciToolStripMenuItem
-            // 
-            this.ciToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.relationshipsToolStripMenuItem});
-            this.ciToolStripMenuItem.Name = "ciToolStripMenuItem";
-            this.ciToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.ciToolStripMenuItem.Text = "View";
             // 
             // label1
             // 
@@ -405,12 +414,12 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Criminals";
             // 
-            // relationshipsToolStripMenuItem
+            // queryEditToolStripMenuItem
             // 
-            this.relationshipsToolStripMenuItem.Name = "relationshipsToolStripMenuItem";
-            this.relationshipsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.relationshipsToolStripMenuItem.Text = "Relationships";
-            this.relationshipsToolStripMenuItem.Click += new System.EventHandler(this.relationshipsToolStripMenuItem_Click);
+            this.queryEditToolStripMenuItem.Name = "queryEditToolStripMenuItem";
+            this.queryEditToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.queryEditToolStripMenuItem.Text = "QueryEdit";
+            this.queryEditToolStripMenuItem.Click += new System.EventHandler(this.queryEditToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -485,6 +494,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem ciToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relationshipsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem queryEditToolStripMenuItem;
     }
 }
 
